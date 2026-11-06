@@ -243,7 +243,7 @@ input.nm{font-family:inherit;font-size:calc(var(--u)*2.6);padding:8px 12px;borde
 var WA = '9647812346562';
 var B = window.BOOK, $ = function(s,r){return (r||document).querySelector(s)}, $$ = function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
 var ORD = ['الأولى','الثانية','الثالثة','الرابعة','الخامسة','السادسة'];
-var LORD = ['الأول','الثاني','الثالث','الرابع','الخامس','السادس','السابع','الثامن','التاسع','العاشر','الحادي عشر','الثاني عشر','الثالث عشر','الرابع عشر','الخامس عشر','السادس عشر','السابع عشر','الثامن عشر','التاسع عشر'];
+var LORD = ['الأول','الثاني','الثالث','الرابع','الخامس','السادس','السابع','الثامن','التاسع','العاشر','الحادي عشر','الثاني عشر','الثالث عشر','الرابع عشر','الخامس عشر','السادس عشر','السابع عشر','الثامن عشر','التاسع عشر','العشرون','الحادي والعشرون','الثاني والعشرون','الثالث والعشرون','الرابع والعشرون','الخامس والعشرون','السادس والعشرون'];
 function ar(n){return String(n).replace(/\d/g,function(d){return '٠١٢٣٤٥٦٧٨٩'[d]})}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function mk(s){return s.replace(/\[\[(.+?)\]\]/g,'<mark class="m1">$1</mark>').replace(/\{\{(.+?)\}\}/g,'<mark class="m2">$1</mark>')}
@@ -305,7 +305,7 @@ function pCover(){
   h+='</div><div class="cv-badge">الصف السادس الإعدادي</div><div class="cv-book">📗</div>'+
     '<div class="cv-title">أساسيات قواعد<br>اللغة العربية</div>'+
     '<div class="cv-sub">كتاب تفاعلي ملوّن: شرح متحرك، وتدريبات، واختبار شامل بتصحيح فوري</div>'+
-    '<div class="cv-sub" style="margin-top:8px;font-size:calc(var(--u)*2.2);opacity:.85">مبني على ملزمة الأستاذ علي مشتت (الأساسيات)</div>'+
+    '<div class="cv-sub" style="margin-top:8px;font-size:calc(var(--u)*2.2);opacity:.85">الأساسيات وأسلوب الاستفهام — مبني على ملزمة الأستاذ علي مشتت</div>'+
     '<button class="cv-go" data-act="open">افتح الكتاب ←</button>'+
     '<div class="cv-by" style="margin-top:calc(var(--u)*2.4)">إعداد<br><b>البروفيسور عماد محمد فرحان</b><br>باستعمال المساعد الذكي كلاود (Claude)</div>'+
     '<div class="cv-free">مجاني للطلبة والأساتذة</div>'+
@@ -477,7 +477,7 @@ function onTest(act,el){
 }
 function pBack(){
   return '<div class="band" data-ic="💌"><small>الخاتمة</small><h2>عن الكتاب</h2></div>'+
-   '<p class="rv" style="--i:0">هذا الكتاب نسخة تفاعلية من ملزمة <b>«قواعد اللغة العربية — الأساسيات»</b> للأستاذ <b>علي مشتت</b>، أُعدّت لطلبة الصف السادس الإعدادي في العراق.</p>'+
+   '<p class="rv" style="--i:0">هذا الكتاب نسخة تفاعلية من ملزمة <b>«قواعد اللغة العربية»</b> (الأساسيات، وأسلوب الاستفهام) للأستاذ <b>علي مشتت</b>، أُعدّت لطلبة الصف السادس الإعدادي في العراق.</p>'+
    '<div class="ex rv" style="--i:1"><div class="s" style="font-size:calc(var(--u)*2.8)">إعداد: البروفيسور عماد محمد فرحان</div><div class="n">باستعمال المساعد الذكي كلاود (Claude) — مجاني للطلبة والأساتذة</div></div>'+
    '<p class="rv" style="--i:2">أرحّب بكل تصحيح نحوي أو إملائي أو اقتراح. اضغط الزر الآتي، أو زر ✉️ في الأسفل من أي صفحة، فتُفتح رسالة واتساب فيها اسم الصفحة.</p>'+
    '<div class="rv" style="--i:3;text-align:center"><button class="btn" style="background:#25d366;box-shadow:0 3px 0 #128c4a" data-act="note">✉️ أرسل ملاحظة</button> <button class="btn ghost" data-act="share">🔗 شارك رابط الكتاب</button></div>'+
